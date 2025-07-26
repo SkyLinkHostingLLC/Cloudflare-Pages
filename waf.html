@@ -1,121 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Security Check</title>
-  <link href="https://fonts.bunny.net/css?family=inter:400,600,700|rubik:500,700" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: #0d1117;
-      font-family: 'Rubik', 'Inter', sans-serif;
-      color: #c9d1d9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2em;
-    }
-
-    main {
-      background-color: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      max-width: 700px;
-      width: 100%;
-      padding: 2.5em;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    h1 {
-      color: #f0f6fc;
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin-bottom: 0.75em;
-    }
-
-    .highlight {
-      color: #3b82f6;
-    }
-
-    h2 {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.6;
-      color: #8b949e;
-      margin-bottom: 1.5em;
-    }
-
-    h2 a {
-      color: #3b82f6;
-      text-decoration: none;
-    }
-
-    h2 a:hover {
-      text-decoration: underline;
-    }
-
-    h4 {
-      font-size: 1rem;
-      color: #f0f6fc;
-      font-weight: 600;
-      margin-top: 1em;
-    }
-
-    .bottom {
-      margin-top: 2em;
-      padding-top: 1em;
-      border-top: 1px solid #30363d;
-      font-size: 0.9rem;
-      color: #8b949e;
-    }
-
-    .access-id {
-      color: #f0f6fc;
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Check</title>
+    <link
+      href="https://fonts.bunny.net/css?family=inter:400,600,700|rubik:500,700"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #0d1117;
+        font-family: "Rubik", "Inter", sans-serif;
+        color: #c9d1d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 2em;
+      }
       main {
-        padding: 1.5em;
+        background-color: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 12px;
+        max-width: 700px;
+        width: 100%;
+        padding: 2.5em;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       }
-
       h1 {
-        font-size: 1.5rem;
+        color: #f0f6fc;
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 0.75em;
       }
-
+      .highlight {
+        color: #3b82f6;
+      }
       h2 {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #8b949e;
+        margin-bottom: 1.5em;
       }
-
+      h2 a {
+        color: #3b82f6;
+        text-decoration: none;
+      }
+      h2 a:hover {
+        text-decoration: underline;
+      }
       h4 {
         font-size: 1rem;
+        color: #f0f6fc;
+        font-weight: 600;
+        margin-top: 1em;
       }
-
       .bottom {
-        font-size: 0.85rem;
+        margin-top: 2em;
+        padding-top: 1em;
+        border-top: 1px solid #30363d;
+        font-size: 0.9rem;
+        color: #8b949e;
       }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1><span class="highlight"><script>document.write(location.hostname)</script></span> is verifying your request.</h1>
-    <h2>
-      Please wait a few seconds while we check your browser...<br>
-      If you are not redirected, visit our <a href="https://status.skylinkhosting.com">Status Page</a>.
-    </h2>
-    <h4>::CAPTCHA_BOX::</h4>
-    <div class="bottom">
-      Your access ID is: <span class="access-id">::RAY_ID::</span>
-    </div>
-  </main>
-</body>
+      .access-id {
+        color: #f0f6fc;
+        font-weight: 600;
+      }
+      @media (max-width: 768px) {
+        main {
+          padding: 1.5em;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 0.95rem;
+        }
+        h4 {
+          font-size: 1rem;
+        }
+        .bottom {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+        <span class="highlight"
+          ><script>
+            document.write(location.hostname);
+          </script></span
+        >
+        is verifying your request.
+      </h1>
+      <h2>
+        Please wait a few seconds while we check your browser...<br />
+        If you are not redirected, visit our
+        <a href="https://status.skylinkhosting.com">Status Page</a>.
+      </h2>
+      <h4>::CAPTCHA_BOX::</h4>
+      <div class="bottom">
+        Your access ID is: <span class="access-id">::RAY_ID::</span>
+      </div>
+    </main>
+  </body>
 </html>
